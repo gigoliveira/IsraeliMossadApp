@@ -1,0 +1,14 @@
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\bin\Debug\netstandard2.0\AppTesteXamarin.deps.json
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\bin\Debug\netstandard2.0\AppTesteXamarin.dll
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\bin\Debug\netstandard2.0\ref\AppTesteXamarin.dll
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\bin\Debug\netstandard2.0\AppTesteXamarin.pdb
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\AppTesteXamarin.csproj.AssemblyReference.cache
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\AppTesteXamarin.AssemblyInfoInputs.cache
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\AppTesteXamarin.AssemblyInfo.cs
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\AppTesteXamarin.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\AppTesteXamarin.dll
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\ref\AppTesteXamarin.dll
+C:\Users\diego\source\repos\AppTesteXamarin\AppTesteXamarin\AppTesteXamarin\obj\Debug\netstandard2.0\AppTesteXamarin.pdb

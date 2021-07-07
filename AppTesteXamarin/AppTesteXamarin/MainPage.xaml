@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewModels="clr-namespace:AppTesteXamarin.ViewModel"
+             x:Class="AppTesteXamarin.MainPage">
+
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Label  Grid.Row="0" Text="List of Candidates" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+            
+            <StackLayout Grid.Row="1">
+                <Entry x:Name="yearsOfExperienceEntry" Placeholder="0" Text="0" Keyboard="Numeric" TextChanged="OnYearsOfExperienceEntryChanged"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2">
+                <Picker ItemDisplayBinding="{Binding name}" Title="Select Experience" x:Name="experienceEntry"  />
+            </StackLayout>
+            
+            <StackLayout Grid.Row="3">
+                <Button x:Name="btnSearch" Text="Search" Clicked="OnButtonClicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4">
+                <Button x:Name="btnApproved" Text="Approved list" Clicked="OnShowApproved"/>
+            </StackLayout>
+
+            <Grid Grid.Row="5" VerticalOptions="CenterAndExpand" Margin="0" Padding="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Name" Grid.Column="0" Grid.Row="0" Style="{DynamicResource headerTablet}"/>
+            </Grid>
+            
+            <BoxView Grid.Row="6" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="2" BackgroundColor="DarkGray"></BoxView>
+
+            <ListView x:Name="lstCandidates" Grid.Row="7" IsPullToRefreshEnabled="True" Margin="4">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid VerticalOptions="CenterAndExpand" BackgroundColor="White" ColumnSpacing="0">
+                                <Grid.GestureRecognizers>
+                                    <SwipeGestureRecognizer Direction="Left" CommandParameter="{Binding candidateId }" Swiped="OnSwiped"/>
+                                    <SwipeGestureRecognizer Direction="Right" CommandParameter="{Binding candidateId }" Swiped="OnSwiped"/>
+                                </Grid.GestureRecognizers>
+                            <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding fullName, Mode=TwoWay}" FontSize="Medium" TextColor="Black" Grid.Column="0" Grid.Row="0" Style="{DynamicResource detailTablet}"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+        </Grid>
+    </StackLayout>
+</ContentPage>
